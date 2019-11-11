@@ -1,0 +1,8 @@
+- hosts: localhost
+  connection: local
+  become: yes
+  include_vars:
+    - vault.yml
+  tasks:
+    - debug:
+        var: secret.test_var
