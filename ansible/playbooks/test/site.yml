@@ -1,7 +1,7 @@
 - hosts: localhost
   connection: local
   become: yes
-  include_vars:
+  vars_files:
     - vault.yml
   tasks:
     - debug:
